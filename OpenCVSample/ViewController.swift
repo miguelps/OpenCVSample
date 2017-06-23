@@ -52,7 +52,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         // バックカメラをmyDeviceに格納.
         for device in devices! {
-            if((device as AnyObject).position == AVCaptureDevicePosition.front){
+            if((device as AnyObject).position == AVCaptureDevicePosition.back){
 //                if(device.position == AVCaptureDevicePosition.Back){
                 myDevice = device as! AVCaptureDevice
             }
