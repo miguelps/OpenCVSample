@@ -44,17 +44,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         mySession = AVCaptureSession()
         
         // 解像度の指定.
-        mySession.sessionPreset = AVCaptureSessionPresetMedium
+        mySession.sessionPreset = AVCaptureSession.Preset.medium
         
         
         // デバイス一覧の取得.
         let devices = AVCaptureDevice.devices()
         
         // バックカメラをmyDeviceに格納.
-        for device in devices! {
-            if((device as AnyObject).position == AVCaptureDevicePosition.back){
+        for device in devices {
+            if((device as AnyObject).position == AVCaptureDevice.Position.back){
 //                if(device.position == AVCaptureDevicePosition.Back){
-                myDevice = device as! AVCaptureDevice
+                myDevice = device
             }
         }
         if myDevice == nil {
@@ -78,7 +78,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         // 出力先を設定
         myOutput = AVCaptureVideoDataOutput()
-        myOutput.videoSettings = [ kCVPixelBufferPixelFormatTypeKey as AnyHashable: Int(kCVPixelFormatType_32BGRA) ]
+        myOutput.videoSettings = [ kCVPixelBufferPixelFormatTypeKey as String: Int(kCVPixelFormatType_32BGRA) ]
         
         
         
@@ -86,7 +86,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         do {
             try myDevice.lockForConfiguration()
 
-            myDevice.activeVideoMinFrameDuration = CMTimeMake(1, 15)
+            myDevice.activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: 15)
             myDevice.unlockForConfiguration()
         } catch let error {
             print("lock error: \(error)")
