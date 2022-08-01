@@ -15,22 +15,11 @@
 		678BED7419F3ADE500C75A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678BED7219F3ADE500C75A68 /* Main.storyboard */; };
 		678BED7619F3ADE500C75A68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678BED7519F3ADE500C75A68 /* Images.xcassets */; };
 		678BED7919F3ADE500C75A68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 678BED7719F3ADE500C75A68 /* LaunchScreen.xib */; };
-		678BED8519F3ADE500C75A68 /* OpenCVSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678BED8419F3ADE500C75A68 /* OpenCVSampleTests.swift */; };
 		678BED8F19F3BADE00C75A68 /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678BED8E19F3BADD00C75A68 /* CameraUtil.swift */; };
 		678BED9419F541DE00C75A68 /* Detector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 678BED9319F541DE00C75A68 /* Detector.mm */; };
 		678BED9819F54DD400C75A68 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 678BED9719F54DD400C75A68 /* haarcascade_frontalface_alt.xml */; };
 		AB6CFD02F1476644E29746DD /* Pods_OpenCVSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201D46E8FF88C89EAA9A939D /* Pods_OpenCVSample.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		678BED7F19F3ADE500C75A68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 678BED6119F3ADE500C75A68 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 678BED6819F3ADE500C75A68;
-			remoteInfo = OpenCVSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05AC491493A3CBF7DF4C83CF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,9 +37,6 @@
 		678BED7319F3ADE500C75A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		678BED7519F3ADE500C75A68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		678BED7819F3ADE500C75A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		678BED7E19F3ADE500C75A68 /* OpenCVSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCVSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		678BED8319F3ADE500C75A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		678BED8419F3ADE500C75A68 /* OpenCVSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVSampleTests.swift; sourceTree = "<group>"; };
 		678BED8E19F3BADD00C75A68 /* CameraUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraUtil.swift; sourceTree = "<group>"; };
 		678BED9219F541DE00C75A68 /* OpenCVSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		678BED9319F541DE00C75A68 /* Detector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Detector.mm; sourceTree = "<group>"; };
@@ -68,13 +54,6 @@
 				45E3FC2C1ECFD89F00D3189C /* libopencv2Static.a in Frameworks */,
 				45AE94C51ECFA06000669009 /* opencv2.framework in Frameworks */,
 				AB6CFD02F1476644E29746DD /* Pods_OpenCVSample.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		678BED7B19F3ADE500C75A68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				678BED6B19F3ADE500C75A68 /* OpenCVSample */,
-				678BED8119F3ADE500C75A68 /* OpenCVSampleTests */,
 				678BED6A19F3ADE500C75A68 /* Products */,
 				FC13EE81146B916E573CA355 /* Pods */,
 				55DF59E13ACD0BD46CF0C3B1 /* Frameworks */,
@@ -109,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				678BED6919F3ADE500C75A68 /* OpenCVSample.app */,
-				678BED7E19F3ADE500C75A68 /* OpenCVSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,23 +116,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		678BED8119F3ADE500C75A68 /* OpenCVSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				678BED8419F3ADE500C75A68 /* OpenCVSampleTests.swift */,
-				678BED8219F3ADE500C75A68 /* Supporting Files */,
-			);
-			path = OpenCVSampleTests;
-			sourceTree = "<group>";
-		};
-		678BED8219F3ADE500C75A68 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				678BED8319F3ADE500C75A68 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		FC13EE81146B916E573CA355 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +138,6 @@
 				678BED6519F3ADE500C75A68 /* Sources */,
 				678BED6619F3ADE500C75A68 /* Frameworks */,
 				678BED6719F3ADE500C75A68 /* Resources */,
-				20A5E6850485401B3090BAD0 /* [CP] Copy Pods Resources */,
 				C742B986D676E7B2C3A9C1C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -189,24 +148,6 @@
 			productName = OpenCVSample;
 			productReference = 678BED6919F3ADE500C75A68 /* OpenCVSample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		678BED7D19F3ADE500C75A68 /* OpenCVSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 678BED8B19F3ADE500C75A68 /* Build configuration list for PBXNativeTarget "OpenCVSampleTests" */;
-			buildPhases = (
-				678BED7A19F3ADE500C75A68 /* Sources */,
-				678BED7B19F3ADE500C75A68 /* Frameworks */,
-				678BED7C19F3ADE500C75A68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				678BED8019F3ADE500C75A68 /* PBXTargetDependency */,
-			);
-			name = OpenCVSampleTests;
-			productName = OpenCVSampleTests;
-			productReference = 678BED7E19F3ADE500C75A68 /* OpenCVSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,11 +165,6 @@
 						DevelopmentTeam = PSQU6597V9;
 						LastSwiftMigration = 0820;
 					};
-					678BED7D19F3ADE500C75A68 = {
-						CreatedOnToolsVersion = 6.0.1;
-						LastSwiftMigration = 0820;
-						TestTargetID = 678BED6819F3ADE500C75A68;
-					};
 				};
 			};
 			buildConfigurationList = 678BED6419F3ADE500C75A68 /* Build configuration list for PBXProject "OpenCVSample" */;
@@ -236,6 +172,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -245,7 +182,6 @@
 			projectRoot = "";
 			targets = (
 				678BED6819F3ADE500C75A68 /* OpenCVSample */,
-				678BED7D19F3ADE500C75A68 /* OpenCVSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,44 +198,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678BED7C19F3ADE500C75A68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20A5E6850485401B3090BAD0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCVSample/Pods-OpenCVSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		654D9E7A4D6996801DCD1F4D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C742B986D676E7B2C3A9C1C5 /* [CP] Embed Pods Frameworks */ = {
@@ -308,13 +225,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCVSample/Pods-OpenCVSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCVSample/Pods-OpenCVSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCVSample/Pods-OpenCVSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -331,23 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		678BED7A19F3ADE500C75A68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				678BED8519F3ADE500C75A68 /* OpenCVSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		678BED8019F3ADE500C75A68 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 678BED6819F3ADE500C75A68 /* OpenCVSample */;
-			targetProxy = 678BED7F19F3ADE500C75A68 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		678BED7219F3ADE500C75A68 /* Main.storyboard */ = {
@@ -492,44 +396,6 @@
 			};
 			name = Release;
 		};
-		678BED8C19F3ADE500C75A68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OpenCVSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.expamle.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSample.app/OpenCVSample";
-			};
-			name = Debug;
-		};
-		678BED8D19F3ADE500C75A68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OpenCVSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.expamle.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenCVSample.app/OpenCVSample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,15 +413,6 @@
 			buildConfigurations = (
 				678BED8919F3ADE500C75A68 /* Debug */,
 				678BED8A19F3ADE500C75A68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		678BED8B19F3ADE500C75A68 /* Build configuration list for PBXNativeTarget "OpenCVSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				678BED8C19F3ADE500C75A68 /* Debug */,
-				678BED8D19F3ADE500C75A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
